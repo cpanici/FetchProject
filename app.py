@@ -21,7 +21,7 @@ def pyramid(word):
 	counts = [word.count(c) for c in list(chars)]
 	counts.sort()
 	if counts[0] != 1: 
-		return False
+		return f'{word} is not a pyramid word.'
 	else:
 		for i in range(1, len(counts)):
 			if counts[i] - 1 != counts[i-1]:
