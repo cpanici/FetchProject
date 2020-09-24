@@ -4,7 +4,7 @@
 
 ### Functionality:
 
-This tool creates a simple web interface for checking if a given word is a "pyramid word".
+This tool is a simple web application for checking if a given word is a "pyramid word".
 
 The user enters a word, and after submitting, a message displays stating whether their input meets the criteria or not.
 
