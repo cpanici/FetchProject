@@ -2,7 +2,7 @@
 ## Pyramid Word Tool
 ### Christian Panici
 
-###Functionality:
+### Functionality:
 
 This tool creates a simple web interface for checking if a given word is a "pyramid word".
 
@@ -11,7 +11,7 @@ The user enters a word, and after submitting, a message displays stating whether
 A word is a **pyramid word** if you can arrange the letters in increasing frequency, starting with 1 and continuing without gaps and without duplicates.
 
 
-###To Run:
+### To Run:
 
 1. Clone repository.
 
@@ -32,7 +32,7 @@ A word is a **pyramid word** if you can arrange the letters in increasing freque
 6. Navigate to http://127.0.0.1:5000/ in preferred web browser.
 
 
-###Sample Usage:
+### Sample Usage:
 
 **User Input:** banana
 **Output:** banana is a pyramid word!
@@ -42,6 +42,6 @@ A word is a **pyramid word** if you can arrange the letters in increasing freque
 **Output:** bandana is not a pyramid word.
 **Reason:** 1 'b' and 1 'd'
 
-###Technologies:
+### Technologies:
 
 This tool was mainly written in Python with the Flask web framework. Webpages were written in HTML and styled with CSS.
