@@ -16,6 +16,8 @@ __________________________________________
 
 ### To Run:
 
+**Note:** Python 3.6 or higher required due to use of f-strings.
+
 1. Clone repository.
 
 2. Navigate to local copy.
