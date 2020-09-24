@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyramid Words</title>
+	<style>
+		input {
+		  width: 100%;
+		  text-align: center;
+		  padding: 12px 20px;
+		  margin: 2px;
+		  border: 4px solid green;
+		  border-radius: 4px;
+		  font-weight: bold;
+		  font-variant: small-caps;
+		  font-size: 200%;
+		}
+		input[type=submit] {
+		  width: 100%;
+		  text-align: center;
+		  padding: 12px 20px;
+		  margin: 2px;
+		  color: white;
+		  background-color: #3CBC8D;
+		  box-sizing: content-box
+		}
+		form {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 90%;
+		}
+		h1, h2 {
+		  text-align: center;
+		  font-size: 300%;
+		  font-variant: small-caps;
+		}
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	{% block content%}
+	<img src="http://clipart-library.com/image_gallery/n1237213.jpg" alt="Pyramid" width="250" height="167.5">
+	<h1>Pyramid Word Checker</h1>
+	<h2>{{ form.word.label }}</h2>
+	<form method="post" action="/">
+		{{ form.hidden_tag() }}
+		{{ form.word }}
+    		{{ form.submit }}
+    		{% if result %}
+        		<h2>{{ result }}</h2>
+    		{% endif %}
+	</form>
+	{% endblock %}
+</body>
+</html>
