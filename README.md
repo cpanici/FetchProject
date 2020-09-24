@@ -14,6 +14,14 @@ A word is a **pyramid word** if you can arrange the letters in increasing freque
 
 __________________________________________
 
+### Input Constraints:
+
+No specific direction was given on input constraints. I have decided to only accept letters in the input string, with an error message appearing if an illegal character appears.
+
+Additionally, I have decided to ignore letter casing in the input. That is, 'a' and 'A' would not be considered different characters in the context of the problem.
+
+__________________________________________
+
 ### To Run:
 
 **Note:** Python 3.6 or higher required due to use of f-strings.
