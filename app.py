@@ -17,7 +17,7 @@ def index():
 
 
 def pyramid(word):
-	chars = set([c for c in word])
+	chars = set(word)
 	counts = [word.count(c) for c in list(chars)]
 	counts.sort()
 	if counts[0] != 1: 
