@@ -21,7 +21,7 @@ A word is a **pyramid word** if you can arrange the letters in increasing freque
 
 >> pip install -r requirements.txt
 
-4. Set FLASK-APP environment variable.
+4. Set FLASK_APP environment variable.
 
 >> set FLASK_APP=app.py
 
@@ -35,11 +35,15 @@ A word is a **pyramid word** if you can arrange the letters in increasing freque
 ### Sample Usage:
 
 **User Input:** banana
+
 **Output:** banana is a pyramid word!
+
 **Reason:** 1 'b', 2 'n's, and 3 'a's
 
 **User Input:** bandana
+
 **Output:** bandana is not a pyramid word.
+
 **Reason:** 1 'b' and 1 'd'
 
 ### Technologies:
