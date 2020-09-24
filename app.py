@@ -17,8 +17,12 @@ def index():
 
 
 def pyramid(word):
-	chars = set(word)
-	counts = [word.count(c) for c in list(chars)]
+	word = word.lower()
+	chars = list(set(word))
+	for c in chars:
+		if not c.isalpha() or c in range(10):
+			return f'Error: Character \'{c}\' is not a letter.'
+	counts = [word.count(c) for c in chars]
 	counts.sort()
 	if counts[0] != 1: 
 		return f'{word} is not a pyramid word.'
